@@ -1,0 +1,53 @@
+// 변수 정의
+@primary-color: #3498db;
+@secondary-color: #e74c3c;
+
+// 기본 스타일 정의
+body {
+  font-family: Arial, sans-serif;
+  background-color: @primary-color;
+  color: #fff;
+}
+
+.header {
+  background-color: @secondary-color;
+  padding: 10px;
+  text-align: center;
+}
+
+// 중첩된 규칙
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+
+  .content {
+    padding: 20px;
+  }
+}
+
+// 믹신 정의
+.button-style() {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: @primary-color;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+// 클래스에 믹신 적용
+.button {
+  .button-style();
+}
+
+// 반응형 스타일
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    max-width: 100%;
+  }
+}
