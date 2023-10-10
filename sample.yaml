@@ -1,0 +1,17 @@
+title: YAML Sample
+description: YAML 파일 예제입니다.
+author:
+  name: ronny.woo
+  email: ronny.woo@goorm.io
+date: 2023-10-10
+tags:
+  - YAML
+  - Sample
+  - Example
+data:
+  - value1
+  - value2
+  - value3
+settings:
+  enable_feature1: true
+  enable_feature2: false
