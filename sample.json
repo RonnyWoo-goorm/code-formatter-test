@@ -1,0 +1,11 @@
+{
+  "name": "ronny",
+  "age": 1,
+  "email": "ronny.woo@goorm.io",
+  "address": {
+    "street": "goorm",
+    "city": "Pangyo",
+    "zipCode": "1234"
+  },
+  "hobbies": ["Drone", "Travel", "Bicycle"]
+}
